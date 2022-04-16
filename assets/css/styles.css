@@ -39,6 +39,10 @@ h4{
     padding-bottom: 10px; 
 }
 
+p{
+    padding-top: 10px;
+}
+
 @media screen and (min-width: 720px) {
     h1{
         font-size: 4rem;
@@ -61,7 +65,7 @@ i{
     padding-bottom: 8px;
 }
 
-#inicio{
+.back{
     background: url(../img/peakpx.jpg) top center fixed;
     background-size: cover;
     padding: 50px 0 50px 0;
@@ -104,7 +108,7 @@ i{
 }
 
 .arrow {
-    position: sticky;
+    position: fixed;
     top: 88%;
     margin-left: 91%;
 }
@@ -203,6 +207,14 @@ ul li:hover ul {
     gap: 2rem;
 }
 
+.card__inicio h1{
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+}
 @media screen and (min-width: 720px) {
     .card__inicio{
         grid-template-columns: 1fr auto;
@@ -216,6 +228,13 @@ ul li:hover ul {
 
 .img__inicio{
     margin: 0px auto;
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: flip;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-delay: 2.4s;
 }
 
 #nosotros, #servicios, #actividades, #contacto{
@@ -339,6 +358,10 @@ ul li:hover ul {
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
 }
 
+.container__card:hover {
+    transform: scale(1.1);
+}
+
 .container__card__link {
     text-decoration: none;
     text-align: center;
@@ -362,6 +385,10 @@ ul li:hover ul {
     width:100%;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+}
+
+.container__activity__image:hover{
+    transform: scale(1.1);
 }
 
 .contact__form{
@@ -512,10 +539,15 @@ ul li:hover ul {
 }
 
 .activity__table {
+    width: 310px;
     background-color: white;
     text-align: center;
     border-collapse: collapse;
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+}
+
+.activity__table:hover {
+    transform: scale(1.1);
 }
 
 th,
@@ -535,7 +567,7 @@ tr:nth-child(even) {
 }
 
 .cronograma__container {
-    width: 45%;
+    width: 50%;
     background-color: white;
     margin-top: 2%;
     margin-left: 5px;
