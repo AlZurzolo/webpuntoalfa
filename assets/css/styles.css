@@ -39,9 +39,9 @@ h4{
     padding-bottom: 10px; 
 }
 
-p{
+/* p{
     padding-top: 10px;
-}
+} */
 
 @media screen and (min-width: 720px) {
     h1{
@@ -109,7 +109,7 @@ i{
 
 .arrow {
     position: fixed;
-    top: 88%;
+    top: 83%;
     margin-left: 91%;
 }
 
@@ -200,7 +200,7 @@ ul li:hover ul {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    text-align: justify;
+    text-align: center;
     padding: 30px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
@@ -219,6 +219,7 @@ ul li:hover ul {
     .card__inicio{
         grid-template-columns: 1fr auto;
         align-items: center;
+        text-align: justify;
     }
 }
 
@@ -358,6 +359,10 @@ ul li:hover ul {
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
 }
 
+.container__card p{
+    font-size: 16px;
+}
+
 .container__card:hover {
     transform: scale(1.1);
 }
@@ -466,14 +471,14 @@ ul li:hover ul {
 .card__container {
     width: 230px;
     font-size: 16px;
-    padding-top: 4px;
-    margin-left: 10%;
+    padding-top: 10px;
+    /* margin-left: 10%; */
 }
 
 .card__container__redes {
-    width: 100px;
+    width: auto;
     font-size: 16px;
-    padding-top: 4px;
+    padding-top: 8px;
 }
 
 .container__contact {
