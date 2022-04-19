@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
+    <!-- Fin bootstrap -->
     <link rel="shortcut icon" href="./../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./../assets/css/styles.css">
     <title>Coaching Ontológico</title>
@@ -11,28 +14,53 @@
 <body>
     <!-- encabezado -->
     <header class="hero">
-        <nav class="menu box">
-            <a href="./../index.html"><img class="header__logo" src="./../assets/img/logo_puntoalfa1b.png" alt="Logo Punto ALFA"></img></a>
-            <ul class="header__nav__items">
-                <li><a href="./../index.html">Inicio</a></li>
-                <li><a href="./../index.html#nosotros">Nosotros</a></li>
-                <li><a href="./../index.html#servicios">Servicios</a>
-                    <ul class="header__nav__items__sec">
-                        <li><a href="./biodecodificacion.html">Biodecodificación</a></li>
-                        <li><a href="./tvp.html">Terapia de vidas pasadas</a></li>
-                        <li><a href="./coaching.html">Coaching Ontológico</a></li>
-                        <li><a href="./memoria.html">Memoria Celular</a></li>
-                    </ul>
-                </li>
-                <li><a href="./../index.html#actividades">Actividades</a>
-                    <ul class="header__nav__items__sec">
-                        <li><a href="./transgeneracional.html">Curso de Transgeneracional</a></li>
-                        <li><a href="./retiro_virtual.html">Retiro Virtual</a></li>
-                    </ul>
-                </li>
-                <li><a href="./../index.html#contacto">Contacto</a></li>
+        <!-- NavBar Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./../index.html"><img class="header__logo" src="./../assets/img/logo_puntoalfa1b.png" alt="Logo Punto ALFA"></img></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./../index.html#nosotros">Nosotros</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="./../index.html#sevivios" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./../page/biodecodificacion.html">Biodecodificación</a></li>
+              <li><a class="dropdown-item" href="./../page/tvp.html">Terapia de vidas pasadas</a></li>
+              <li><a class="dropdown-item" href="./../page/coaching.html">Coaching Ontológico</a></li>
+              <li><a class="dropdown-item" href="./../page/memoria.html">Memoria Celular</a></li>
             </ul>
-        </nav>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./../index.html#actividades" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Actividades
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./../page/transgeneracional.html">Formación en Transgeneracional</a></li>
+              <li><a class="dropdown-item" href="./../page/retiro_virtual.html">Retiro Virtual</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./../index.html#contacto">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Fin NavBar Bootstrap -->
     </header>
     <!-- fin encabezado -->
     <div class="arrow">
@@ -92,5 +120,6 @@
     </div>
 </footer>
 <!-- fin pie -->
+<script src="./../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

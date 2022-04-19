@@ -89,7 +89,7 @@ i{
     margin-left: 0;
 }
 
-.menu {
+/* .menu {
     grid-area: menu;
     display: grid;
     justify-content: space-between;
@@ -97,7 +97,7 @@ i{
     gap: 1em;
     align-items: center;
     height: 60px;
-}
+} */
 
 .menu__icon {
     width: 30px;
