@@ -36,12 +36,14 @@ h3{
 h4{
     font-size: 1.4rem;
     padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
+    color: #4a0404;
 }
 
-/* p{
-    padding-top: 10px;
-} */
+p{
+    padding-top: 6px;
+    color: #4a0404;
+}
 
 @media screen and (min-width: 720px) {
     h1{
@@ -61,9 +63,9 @@ h4{
     }
 }
 
-/* i{
+i{
     padding-bottom: 8px;
-} */
+}
 
 .back{
     background: url(../img/peakpx.jpg) top center fixed;
@@ -82,8 +84,7 @@ h4{
 .hero {
     background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));
     display: grid;
-    grid-template-rows: max-content 1fr;
-    grid-template-areas: "menu";
+    grid-template-columns: 1fr;
     position: sticky;
     top: 0;
     margin-left: 0;
@@ -370,10 +371,11 @@ ul li:hover ul {
 .container__card__link {
     text-decoration: none;
     text-align: center;
+    color: #4a0404;
 }
 
-.container__card__link a:hover, p:hover, h4:hover {
-    color: #4a0404;
+.container__card__link a:hover, h4:hover, img:hover{
+    color: #f7450c;
 }
 
 .container__card__image {
@@ -383,6 +385,7 @@ ul li:hover ul {
     border-radius: 50%;
     border: 2px;
     border-style: solid;
+    color: #4a0404;
 }
 
 .container__activity__image {
