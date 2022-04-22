@@ -25,12 +25,14 @@ h1{
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
+    color: #4a0404;
 }
 
 h3{
     font-size: 1.8rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #4a0404;
 }
 
 h4{
@@ -41,7 +43,11 @@ h4{
 }
 
 p{
-    padding-top: 6px;
+    padding-top: 4px;
+    color: #4a0404;
+}
+
+i{
     color: #4a0404;
 }
 
@@ -73,39 +79,21 @@ i{
     padding: 50px 0 50px 0;
 }
 
-.box {
+/* .box {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
-}
+} */
 
 .hero {
     background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));
     display: grid;
-    grid-template-columns: 1fr;
-    position: sticky;
+    grid-template-rows: 1fr auto;
+    position:sticky;
     top: 0;
     margin-left: 0;
-}
-
-/* .menu {
-    grid-area: menu;
-    display: grid;
-    justify-content: space-between;
-    grid-auto-flow: column;
-    gap: 1em;
-    align-items: center;
-    height: 60px;
-} */
-
-.menu__icon {
-    width: 30px;
-}
-
-.menu__men {
-    display: none;
 }
 
 .arrow {
@@ -120,32 +108,32 @@ i{
     }
 }
 
-.arrow__img {
-    width: 35px;
+#current{
+    fill: #f7450c;
+    transition: ease-in 0.2s all;
 }
 
-.arrow__img:hover {
-    background-color:#4a0404;
-    border-radius: 5px;
+#current:hover {
+    fill: #4a0404;
 }
 
-.header__nav__items {
+/* .header__nav__items {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
     gap: 1em;
-}
+} */
 
-.header__nav__items li {
+/* .header__nav__items li {
     display: inline-block;
     padding: 5px;
-}
+} */
 
-.header__nav__items li a:hover {
+/* .header__nav__items li a:hover {
     color: #4a0404;
-}
+} */
 
-.header__nav__items__sec li {
+/* .header__nav__items__sec li {
     display:list-item;
     list-style: none;
     padding: 5px;
@@ -153,14 +141,14 @@ i{
     border-style: solid;
     background-color: rgb(219, 219, 219);
     border-radius: 5px;
-}
+} */
 
-li a {
+/* li a {
     font-weight: bold;
     font-size: medium;
     color: white;
     text-decoration: none;
-}
+} */
 
 .header__logo {
     width: 120px;
@@ -186,6 +174,10 @@ ul li:hover ul {
     display: block;
 }
 
+li{
+    color: #4a0404;
+}
+
 .container__inicio {
     height: auto;
     align-items: center;
@@ -196,8 +188,17 @@ ul li:hover ul {
     background-size: cover;
 }
 
+/* nombre de areas inicio */
+article:first-of-type{
+    grid-area: texto;
+}
+
+article:last-of-type{
+    grid-area: imagen;
+}
+
 .card__inicio{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -206,26 +207,36 @@ ul li:hover ul {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     gap: 2rem;
+    overflow: hidden;
+
+    /* especifico posición de areas */
+    grid-template-areas:
+        "imagen"
+        "texto";
 }
 
-.card__inicio h1{
+.text__inicio h2{
     display: inline-block;
     margin: 0 0.5rem;
 
     animation: fadeIn;
     animation-iteration-count: 1;
     animation-duration: 8s;
+    font-weight:bold;
+    color: #4a0404;
 }
+
 @media screen and (min-width: 720px) {
     .card__inicio{
-        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "texto imagen";
         align-items: center;
         text-align: justify;
     }
-}
-
-.card__inicio h1{
-    font-size: 2.2rem;
+    .text__inicio h2{
+        text-align: justify;
+        line-height: 4rem;
+    }    
 }
 
 .img__inicio{
@@ -236,7 +247,7 @@ ul li:hover ul {
     animation: flip;
     animation-iteration-count: 1;
     animation-duration: 5s;
-    animation-delay: 2.4s;
+    animation-delay: 1s;
 }
 
 #nosotros, #servicios, #actividades, #contacto{
@@ -245,8 +256,8 @@ ul li:hover ul {
     padding: 50px 0 50px 0
 }
 
-.container {
-    width: 80%;
+.containerTotal {
+    width: 85%;
     height: auto;
     margin: auto;
     display: grid;
@@ -262,7 +273,7 @@ ul li:hover ul {
 }
 
 @media screen and (min-width: 720px) {
-    .container {
+    .containerTotal {
         grid-template-columns: auto auto;
         grid-template-rows: 1fr auto auto;
     }
@@ -291,34 +302,18 @@ ul li:hover ul {
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
 }
 
-.container__home {
-    display:grid;
-    width: 80%;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-    "container__home__text"
-    "container__home__image";
-    background:  rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    align-items: center;
-    overflow: hidden;
-}
-
-.container__home__text {
-    width: 95%;
-    margin: 35px;
-    font-size: 20px;
-}
-
-.container__home__image {
-    margin: 35px;
-    width: 5%;
+@media screen and (min-width: 720px) {
+    .photo{
+        width: 340px;
+    }
 }
 
 .titles {
     display: flex;
     flex-wrap: wrap;
     font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     color: #4a0404;
@@ -328,36 +323,46 @@ ul li:hover ul {
     font-size: 1.3rem;
 }
 
-.container__our {
-    display:grid;
-    width: 80%;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-    "our__image container__our__text"
-    "container__our__text our__image";
-    justify-content: space-around;
-    gap: 2em;
-    background:  rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    align-items: center;
-    overflow: hidden;
-}
-
 .container__our__text {
     width: 100%;
     font-size: 16px;
     text-align: center;
 }
 
+.container__our__text h2{
+    font-weight: 600;
+}
+
+.container__our__text a{
+    color: #4a0404;
+    text-decoration: none;
+}
+
+.container__our__text a:hover{
+    color:#f7450c;
+}
+
 .container__card {
     display: flex;
-    width: 280px;
+    width: 260px;
     height: 260px;
     background-color: rgb(241, 241, 241);
     margin-top: 2%;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+}
+
+@media screen and (min-width: 576px) {
+    .container__card {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .container__card {
+        width: 400px;
+    }
 }
 
 .container__card p{
@@ -371,10 +376,9 @@ ul li:hover ul {
 .container__card__link {
     text-decoration: none;
     text-align: center;
-    color: #4a0404;
 }
 
-.container__card__link a:hover, h4:hover, img:hover{
+.container__card__link h4:hover, img:hover{
     color: #f7450c;
 }
 
@@ -400,7 +404,8 @@ ul li:hover ul {
 }
 
 .contact__form{
-    box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+    box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6);
+    border-radius: 10px;
 }
 
 .contact__form form{
@@ -432,6 +437,10 @@ ul li:hover ul {
     padding-bottom: 2rem;
 }
 
+.contact__form label{
+    font-weight: bold;
+}
+
 .point__contact{
     display: flex;
     justify-content: space-around;
@@ -439,16 +448,21 @@ ul li:hover ul {
 }
 
 .point__contact a{
-    color: black;
+    color:#4a0404;
     font-size: 1.8rem;
+}
+
+.point__contact a:hover{
+    color:#f7450c;
 }
 
 .contact__info{
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr auto;
     padding: 30px 10px 30px 10px;
-    gap: 2rem;
-    box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+    gap: 6rem;
+    box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6);
+    border-radius: 10px;
 }
 
 #footer {
@@ -496,12 +510,12 @@ ul li:hover ul {
 }
 
 .container__therapy{
-    width: 80%;
+    width: 85%;
     height: auto;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr auto; */
     justify-content: space-around;
     align-items: center;
     text-align: justify;
@@ -526,12 +540,11 @@ ul li:hover ul {
 }
 
 .container__our__textTherapy p {
-    margin: 5px;
     padding-top: 6px;
 }
 
 .container__retiro{
-    width: 80%;
+    width: 85%;
     height: auto;
     margin: auto;
     display: grid;
@@ -588,6 +601,12 @@ tr:nth-child(even) {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6)
+}
+
+@media screen and (min-width: 720px) {
+    .container__our__photoVirtual {
+        width: 100%;
+    }
 }
 
 .container__our__textTherapys {
