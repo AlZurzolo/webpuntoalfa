@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
+@import 'variables';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem === 10px */
+}
+
+body{
+    font-size: 1.8rem;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-text;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: $color-text;
+}
+
+h3{
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $color-text;
+}
+
+h4{
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $color-text;
+}
+
+p{
+    padding-top: 4px;
+    color: $color-text;
+}
+
+i{
+    color: $color-text;
+}
+
+@media screen and (min-width: 720px) {
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.6rem;
+    }
+
+    h3{
+        font-size: 2.4rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+}
+
+i{
+    padding-bottom: 8px;
+}
+
+.back{
+    background: url(../img/peakpx.jpg) top center fixed;
+    background-size: cover;
+    padding: 50px 0 50px 0;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));
+    display: grid;
+    grid-template-rows: 1fr auto;
+    position:sticky;
+    top: 0;
+    margin-left: 0;
+}
+
+.arrow {
+    position: fixed;
+    top: 83%;
+    margin-left: 90%;
+}
+
+@media screen and (min-width: 720px) {
+    .arrow{
+        margin-left: 95%;
+    }
+}
+
+#current{
+    fill: $color-link;
+    transition: ease-in 0.2s all;
+
+    &:hover {
+        fill: $color-text;
+    }
+}
+
+.header__logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+
+    li {
+        display: block;
+        color: $color-text;
+
+        a {
+            color: $color-link;
+            font-weight: lighter;
+            font-size: small;
+        }
+    }
+}
+
+li:hover ul {
+    display: block;
+}
+
+.container__inicio {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(../img/hero-bg.jpg) top center fixed;
+    background-size: cover;
+}
+
+/* nombre de areas inicio */
+article:first-of-type{
+    grid-area: texto;
+}
+
+article:last-of-type{
+    grid-area: imagen;
+}
+
+.card__inicio{
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px;
+    background: $color-background;
+    border-radius: 10px;
+    gap: 2rem;
+    overflow: hidden;
+
+    /* especifico posición de areas */
+    grid-template-areas:
+        "imagen"
+        "texto";
+}
+
+.text__inicio h2{
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    font-weight:bold;
+    color: $color-text;
+}
+
+@media screen and (min-width: 720px) {
+    .card__inicio{
+        grid-template-areas:
+            "texto imagen";
+        align-items: center;
+        text-align: justify;
+    }
+    .text__inicio h2{
+        text-align: justify;
+        line-height: 4rem;
+    }    
+}
+
+.img__inicio{
+    margin: 0px auto;
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: flip;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+#nosotros, #servicios, #actividades, #contacto{
+    background: url(../img/felicidad.jpg) top center fixed;
+    background-size: cover;
+    padding: 50px 0 50px 0
+}
+
+.containerTotal {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    background: $color-background;
+    border-radius: $rounded-edges;
+    gap:4rem;
+}
+
+@media screen and (min-width: 720px) {
+    .containerTotal {
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr auto auto;
+    }
+    .titles {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+    }
+    .container__our__text{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.photo {
+    width: 220px;
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
+}
+
+@media screen and (min-width: 720px) {
+    .photo{
+        width: 340px;
+    }
+}
+
+.titles {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-text;
+
+    h4{
+    font-size: 1.3rem;
+    }
+}
+
+.container__our__text {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+
+    h2{
+    font-weight: 600;
+    }
+
+    a{
+        color: $color-text;
+        text-decoration: none;
+
+        &:hover{
+            color: $color-link;
+        } 
+    }  
+}
+
+.container__card {
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(241, 241, 241);
+    margin-top: 2%;
+    padding: 10px;
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
+
+    p{
+        font-size: 16px;
+    }
+}
+
+.container__card:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 576px) {
+    .container__card {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .container__card {
+        width: 400px;
+    }
+}
+
+.container__card__link {
+    text-decoration: none;
+    text-align: center;
+
+    h4:hover, img:hover{
+        color: $color-link;
+    }
+}
+
+.container__card__image {
+    width: 80px;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px;
+    border-style: solid;
+    color: $color-text;
+}
+
+.container__activity__image {
+    display: flex;
+    width:100%;
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.contact__form{
+    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges;
+
+    p{
+        padding-bottom: 2rem;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    form{
+        margin: 0;
+        padding: 1rem;
+
+        button, input, textarea{
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            background: none;
+            border-bottom: 1px solid $color-text;
+            }
+
+        button{
+            background: $color-link;
+            border: 0;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.point__contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        color: $color-text;
+        font-size: 1.8rem;
+
+        &:hover{
+            color: $color-link;
+        }
+    }
+}
+
+.contact__info{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr auto;
+    padding: 30px 10px 30px 10px;
+    gap: 6rem;
+    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges;
+}
+
+#footer {
+    width: 100%;
+    background-color: $color-link;
+}
+
+.footer__container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__serv{ 
+    h1{
+        font-size: 4rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+}
+
+.card__container {
+    width: 230px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.card__container__redes {
+    width: auto;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.container__contact {
+    width: 40%;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container__our__photoTherapy {
+    width: 280px;
+    margin: 30px;
+    border-radius: $rounded-edges;
+    float: left;
+    box-shadow: $color-box-shadow;
+}
+
+.container__our__textTherapy {
+    padding: 30px;
+    font-size: 16px;
+    text-align: justify;
+
+    p {
+        padding-top: 6px;
+    }
+
+    h2, h4 {
+        padding-bottom: 8px;
+    }
+
+    h4 {
+        padding-top: 15px;
+    }
+}
+
+.container__retiro{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    background: $color-background;
+    border-radius: $rounded-edges;
+    gap:3rem
+}
+
+.activity__table {
+    width: 320px;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: $color-box-shadow;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+th,
+td {
+    border: solid 1px $color-text;
+    padding: 10px;
+}
+
+thead {
+    background-color: $color-link;
+    border-bottom: solid 5px $color-text;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.cronograma__container {
+    width: 50%;
+    background-color: white;
+    margin-top: 2%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container__our__photoVirtual {
+    display: flex;
+    width: 100%;
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
+}
+
+@media screen and (min-width: 720px) {
+    .container__our__photoVirtual {
+        width: 100%;
+    }
+}
+
+.container__our__textTherapyTwo {
+    font-size: 18px;
+    text-align: justify;
+}
