@@ -79,14 +79,6 @@ i{
     padding: 50px 0 50px 0;
 }
 
-/* .box {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-} */
-
 .hero {
     background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));
     display: grid;
@@ -99,12 +91,12 @@ i{
 .arrow {
     position: fixed;
     top: 83%;
-    margin-left: 91%;
+    margin-left: 90%;
 }
 
 @media screen and (min-width: 720px) {
     .arrow{
-        margin-left: 94%;
+        margin-left: 95%;
     }
 }
 
@@ -116,39 +108,6 @@ i{
 #current:hover {
     fill: #4a0404;
 }
-
-/* .header__nav__items {
-    list-style: none;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 1em;
-} */
-
-/* .header__nav__items li {
-    display: inline-block;
-    padding: 5px;
-} */
-
-/* .header__nav__items li a:hover {
-    color: #4a0404;
-} */
-
-/* .header__nav__items__sec li {
-    display:list-item;
-    list-style: none;
-    padding: 5px;
-    border: 1px;
-    border-style: solid;
-    background-color: rgb(219, 219, 219);
-    border-radius: 5px;
-} */
-
-/* li a {
-    font-weight: bold;
-    font-size: medium;
-    color: white;
-    text-decoration: none;
-} */
 
 .header__logo {
     width: 120px;
@@ -204,7 +163,7 @@ article:last-of-type{
     grid-template-columns: 1fr;
     text-align: center;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     gap: 2rem;
     overflow: hidden;
@@ -257,7 +216,7 @@ article:last-of-type{
 }
 
 .containerTotal {
-    width: 85%;
+    width: 95%;
     height: auto;
     margin: auto;
     display: grid;
@@ -267,7 +226,7 @@ article:last-of-type{
     align-items: center;
     text-align: justify;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     gap:4rem;
 }
@@ -355,7 +314,7 @@ article:last-of-type{
 
 @media screen and (min-width: 576px) {
     .container__card {
-        width: 280px;
+        width: 260px;
     }
 }
 
@@ -458,6 +417,7 @@ article:last-of-type{
 
 .contact__info{
     display: grid;
+    width: 100%;
     grid-template-rows: 1fr 1fr auto;
     padding: 30px 10px 30px 10px;
     gap: 6rem;
@@ -489,7 +449,6 @@ article:last-of-type{
     width: 230px;
     font-size: 16px;
     padding-top: 10px;
-    /* margin-left: 10%; */
 }
 
 .card__container__redes {
@@ -509,13 +468,11 @@ article:last-of-type{
     font-size: 16px;
 }
 
-.container__therapy{
+/* .container__therapy{
     width: 85%;
     height: auto;
     margin: auto;
     display: grid;
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: 1fr auto; */
     justify-content: space-around;
     align-items: center;
     text-align: justify;
@@ -523,7 +480,7 @@ article:last-of-type{
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     gap: 3rem;
-}
+} */
 
 .container__our__photoTherapy {
     width: 280px;
@@ -544,7 +501,7 @@ article:last-of-type{
 }
 
 .container__retiro{
-    width: 85%;
+    width: 95%;
     height: auto;
     margin: auto;
     display: grid;
@@ -554,13 +511,13 @@ article:last-of-type{
     align-items: center;
     text-align: justify;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     gap:3rem
 }
 
 .activity__table {
-    width: 310px;
+    width: 320px;
     background-color: white;
     text-align: center;
     border-collapse: collapse;
@@ -609,7 +566,7 @@ tr:nth-child(even) {
     }
 }
 
-.container__our__textTherapys {
+.container__our__textTherapyTwo {
     font-size: 18px;
     text-align: justify;
 }
