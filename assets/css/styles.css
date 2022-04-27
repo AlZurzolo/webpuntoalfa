@@ -63,11 +63,19 @@ i {
 
 .hero {
   background-image: linear-gradient(to bottom, #f7450c, #fdd510);
-  display: grid;
-  grid-template-rows: 1fr auto;
   position: sticky;
   top: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6); }
+
+@media screen and (min-width: 720px) {
+  .hero {
+    display: flex; } }
+
+.dropdown-menu {
+  background: rgba(253, 213, 16, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6); }
 
 .arrow {
   position: fixed;

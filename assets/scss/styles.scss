@@ -81,12 +81,21 @@ i{
 }
 
 .hero {
-    background-image: linear-gradient(to bottom, #f7450c, rgb(253, 213, 16));
-    display: grid;
-    grid-template-rows: 1fr auto;
-    position:sticky;
+    background-image: linear-gradient(to bottom, #f7450c, #fdd510);
+    position: sticky;
     top: 0;
     margin-left: 0;
+    box-shadow: $color-box-shadow;
+}
+  
+    @media screen and (min-width: 720px) {
+      .hero {
+        display: flex;} }
+
+.dropdown-menu{
+    background:rgba(253, 213, 16, 0.8);
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
 }
 
 .arrow {
