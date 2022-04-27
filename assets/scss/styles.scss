@@ -94,8 +94,12 @@ i{
 
 .dropdown-menu{
     background:rgba(253, 213, 16, 0.8);
-    border-radius: $rounded-edges;
+    border-radius: $rounded-edges/2;
     box-shadow: $color-box-shadow;
+}
+
+.dropdown-item{
+    border-radius: $rounded-edges/2;
 }
 
 .arrow {
@@ -432,7 +436,7 @@ article:last-of-type{
 
 #footer {
     width: 100%;
-    background-color: $color-link;
+    background-color: $color-text;
 }
 
 .footer__container{
@@ -456,6 +460,10 @@ article:last-of-type{
     width: 230px;
     font-size: 16px;
     padding-top: 10px;
+
+    p{
+        color: $color-link;
+    }
 }
 
 .card__container__redes {
@@ -508,8 +516,7 @@ article:last-of-type{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    justify-content: space-around;
-    align-items: center;
+    justify-content:space-around;
     text-align: justify;
     padding: 30px;
     background: $color-background;
@@ -564,7 +571,7 @@ tr:nth-child(even) {
 @media screen and (min-width: 720px) {
     .container__our__photoVirtual {
         width: 100%;
-    }
+      }
 }
 
 .container__our__textTherapyTwo {
