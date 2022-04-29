@@ -352,6 +352,9 @@ article:last-of-type {
   justify-content: space-around;
   align-items: center; }
 
+.icon {
+  filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%); }
+
 .container__serv h1 {
   font-size: 4rem; }
 

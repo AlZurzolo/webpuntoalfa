@@ -20,40 +20,40 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.4rem;
     font-weight: bold;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 h3{
     font-size: 1.8rem;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 h4{
     font-size: 1.4rem;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 p{
     padding-top: 4px;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 i{
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 ul li{
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 @media screen and (min-width: 720px) {
@@ -91,7 +91,7 @@ ul li{
     top: 0;
     margin-left: 0;
     padding-right: 15px;
-    box-shadow: $color-box-shadow;
+    box-shadow: $color-box-shadow; //Aplicando SASS
 }
   
     @media screen and (min-width: 990px) {
@@ -101,17 +101,15 @@ ul li{
 
 .dropdown-menu{
     background:rgba(253, 213, 16, 0.8);
-    // Aplicando SASSII
-    border-radius: $rounded-edges/2;
-    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges/2; // Aplicando SASSII
+    box-shadow: $color-box-shadow;  //Aplicando SASS
 }
 
 .dropdown-item{
-    // Aplicando SASSII
-    border-radius: $rounded-edges/2;
+    border-radius: $rounded-edges/2; // Aplicando SASSII
 
     &:hover{
-        background-color: $color-link;
+        background-color: $color-link; //Aplicando SASS
         color: white;
     }
 }
@@ -129,11 +127,11 @@ ul li{
 }
 
 #current{
-    fill: $color-link;
+    fill: $color-link; //Aplicando SASS
     transition: ease-in 0.2s all;
 
     &:hover {
-        fill: $color-text;
+        fill: $color-text; //Aplicando SASS
     }
 }
 
@@ -148,10 +146,10 @@ ul ul {
 
     li {
         display: block;
-        color: $color-text;
+        color: $color-text; //Aplicando SASS
 
         a {
-            color: $color-link;
+            color: $color-link; //Aplicando SASS
             font-weight: lighter;
             font-size: small;
         }
@@ -188,7 +186,7 @@ article:last-of-type{
     grid-template-columns: 1fr;
     text-align: center;
     padding: 30px;
-    background: $color-background;
+    background: $color-background; //Aplicando SASS
     border-radius: 10px;
     gap: 2rem;
     overflow: hidden;
@@ -207,7 +205,7 @@ article:last-of-type{
     animation-iteration-count: 1;
     animation-duration: 8s;
     font-weight:bold;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 @media screen and (min-width: 720px) {
@@ -251,8 +249,8 @@ article:last-of-type{
     align-items: center;
     text-align: justify;
     padding: 30px;
-    background: $color-background;
-    border-radius: $rounded-edges;
+    background: $color-background; //Aplicando SASS
+    border-radius: $rounded-edges; //Aplicando SASS
     gap:2rem;
 }
 
@@ -282,8 +280,8 @@ article:last-of-type{
 
 .photo {
     width: 220px;
-    border-radius: $rounded-edges;
-    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges; //Aplicando SASS
+    box-shadow: $color-box-shadow; //Aplicando SASS
 }
 
 @media screen and (min-width: 720px) {
@@ -300,7 +298,7 @@ article:last-of-type{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 
     h4{
     font-size: 1.3rem;
@@ -317,11 +315,11 @@ article:last-of-type{
     }
 
     a{
-        color: $color-text;
+        color: $color-text; //Aplicando SASS
         text-decoration: none;
 
         &:hover{
-            color: $color-link;
+            color: $color-link; //Aplicando SASS
         } 
     }  
 }
@@ -333,8 +331,8 @@ article:last-of-type{
     background-color: rgb(241, 241, 241);
     margin-top: 2%;
     padding: 10px;
-    border-radius: $rounded-edges;
-    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges; //Aplicando SASS
+    box-shadow: $color-box-shadow; //Aplicando SASS
 
     p{
         font-size: 16px;
@@ -366,7 +364,7 @@ article:last-of-type{
     }
 
     h4:hover, img:hover{
-        color: $color-link;
+        color: $color-link; //Aplicando SASS
     }
 }
 
@@ -377,14 +375,14 @@ article:last-of-type{
     border-radius: 50%;
     border: 2px;
     border-style: solid;
-    color: $color-text;
+    color: $color-text; //Aplicando SASS
 }
 
 .container__activity__image {
     display: flex;
     width:100%;
-    border-radius: $rounded-edges;
-    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges; //Aplicando SASS
+    box-shadow: $color-box-shadow; //Aplicando SASS
 
     &:hover{
         transform: scale(1.1);
@@ -392,8 +390,8 @@ article:last-of-type{
 }
 
 .contact__form{
-    box-shadow: $color-box-shadow;
-    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow; //Aplicando SASS
+    border-radius: $rounded-edges; //Aplicando SASS
 
     p{
         padding-bottom: 2rem;
@@ -412,11 +410,11 @@ article:last-of-type{
             padding: 1rem;
             border: none;
             background: none;
-            border-bottom: 1px solid $color-text;
+            border-bottom: 1px solid $color-text; //Aplicando SASS
             }
 
         button{
-            background: $color-text;
+            background: $color-text; //Aplicando SASS
             border: 0;
             border-radius: 5px;
             font-size: 1.6rem;
@@ -425,7 +423,7 @@ article:last-of-type{
             text-transform: uppercase;
 
             &:hover{
-                background-color: $color-link;
+                background-color: $color-link; //Aplicando SASS
             }
         }
     }
@@ -437,11 +435,11 @@ article:last-of-type{
     align-items: center;
 
     a{
-        color: $color-text;
+        color: $color-text; //Aplicando SASS
         font-size: 1.8rem;
 
         &:hover{
-            color: $color-link;
+            color: $color-link; //Aplicando SASS
         }
     }
 }
@@ -452,13 +450,13 @@ article:last-of-type{
     grid-template-rows: 1fr 1fr auto;
     padding: 30px 10px 30px 10px;
     gap: 6rem;
-    box-shadow: $color-box-shadow;
-    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow; //Aplicando SASS
+    border-radius: $rounded-edges; //Aplicando SASS
 }
 
 #footer {
     width: 100%;
-    background-color: $color-text;
+    background-color: $color-footer-background; //Aplicando SASS
 }
 
 .footer__container{
@@ -466,6 +464,14 @@ article:last-of-type{
     grid-template-columns: auto auto;
     justify-content: space-around;
     align-items: center;
+}
+
+.icon{
+    @if ($color-footer-background == $color-text){ //Aplicando SASSII
+        filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%);
+    }@else{
+        filter: invert(7%) sepia(37%) saturate(6287%) hue-rotate(353deg) brightness(99%) contrast(103%);
+    }
 }
 
 .container__serv{ 
@@ -484,8 +490,13 @@ article:last-of-type{
     padding-top: 10px;
 
     p{
-        color: $color-link;
+        @if ($color-footer-background == $color-text){ //Aplicando SASSII
+            color: $color-link; 
+        } @else{
+            color: $color-text;
+        }
     }
+
 }
 
 .card__container__redes {
@@ -508,9 +519,9 @@ article:last-of-type{
 .container__our__photoTherapy {
     width: 320px;
     margin: 30px;
-    border-radius: $rounded-edges;
+    border-radius: $rounded-edges; //Aplicando SASS
     float: left;
-    box-shadow: $color-box-shadow;
+    box-shadow: $color-box-shadow; //Aplicando SASS
 }
 
 @media screen and (min-width: 720px) {
@@ -547,8 +558,8 @@ article:last-of-type{
     justify-content:space-around;
     text-align: justify;
     padding: 30px;
-    background: $color-background;
-    border-radius: $rounded-edges;
+    background: $color-background; //Aplicando SASS
+    border-radius: $rounded-edges; //Aplicando SASS
     gap:3rem
 }
 
@@ -557,7 +568,7 @@ article:last-of-type{
     background-color: white;
     text-align: center;
     border-collapse: collapse;
-    box-shadow: $color-box-shadow;
+    box-shadow: $color-box-shadow; //Aplicando SASS
 
     &:hover {
         transform: scale(1.1);
@@ -566,13 +577,13 @@ article:last-of-type{
 
 th,
 td {
-    border: solid 1px $color-text;
-    padding: 10px;
+    border: solid 1px $color-text; //Aplicando SASS
+    padding: 10px; 
 }
 
 thead {
-    background-color: $color-link;
-    border-bottom: solid 5px $color-text;
+    background-color: $color-link; //Aplicando SASS
+    border-bottom: solid 5px $color-text; //Aplicando SASS
     color: white;
 }
 
@@ -592,8 +603,8 @@ tr:nth-child(even) {
 .container__our__photoVirtual {
     display: flex;
     width: 100%;
-    border-radius: $rounded-edges;
-    box-shadow: $color-box-shadow;
+    border-radius: $rounded-edges; //Aplicando SASS
+    box-shadow: $color-box-shadow; //Aplicando SASS
 }
 
 @media screen and (min-width: 720px) {
