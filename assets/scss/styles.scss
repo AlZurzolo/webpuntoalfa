@@ -52,6 +52,10 @@ i{
     color: $color-text;
 }
 
+ul li{
+    color: $color-text;
+}
+
 @media screen and (min-width: 720px) {
     h1{
         font-size: 4rem;
@@ -68,10 +72,11 @@ i{
     h4{
         font-size: 2rem;
     }
-}
 
-i{
-    padding-bottom: 8px;
+    i{
+        padding-bottom: 8px;
+    }
+    
 }
 
 .back{
@@ -85,12 +90,14 @@ i{
     position: sticky;
     top: 0;
     margin-left: 0;
+    padding-right: 15px;
     box-shadow: $color-box-shadow;
 }
   
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 990px) {
       .hero {
-        display: flex;} }
+        display: flex;} 
+    }
 
 .dropdown-menu{
     background:rgba(253, 213, 16, 0.8);
@@ -102,6 +109,11 @@ i{
 .dropdown-item{
     // Aplicando SASSII
     border-radius: $rounded-edges/2;
+
+    &:hover{
+        background-color: $color-link;
+        color: white;
+    }
 }
 
 .arrow {
@@ -241,7 +253,7 @@ article:last-of-type{
     padding: 30px;
     background: $color-background;
     border-radius: $rounded-edges;
-    gap:4rem;
+    gap:2rem;
 }
 
 @media screen and (min-width: 720px) {
@@ -349,6 +361,10 @@ article:last-of-type{
     text-decoration: none;
     text-align: center;
 
+    h4{
+        font-weight: bold;
+    }
+
     h4:hover, img:hover{
         color: $color-link;
     }
@@ -400,13 +416,17 @@ article:last-of-type{
             }
 
         button{
-            background: $color-link;
+            background: $color-text;
             border: 0;
             border-radius: 5px;
             font-size: 1.6rem;
             font-weight: bold;
             color: white;
             text-transform: uppercase;
+
+            &:hover{
+                background-color: $color-link;
+            }
         }
     }
 }
@@ -486,11 +506,17 @@ article:last-of-type{
 }
 
 .container__our__photoTherapy {
-    width: 280px;
+    width: 320px;
     margin: 30px;
     border-radius: $rounded-edges;
     float: left;
     box-shadow: $color-box-shadow;
+}
+
+@media screen and (min-width: 720px) {
+    .container__our__photoTherapy{
+        width: 400px;
+    }
 }
 
 .container__our__textTherapy {

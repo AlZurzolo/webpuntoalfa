@@ -43,6 +43,9 @@ p {
 i {
   color: #4a0404; }
 
+ul li {
+  color: #4a0404; }
+
 @media screen and (min-width: 720px) {
   h1 {
     font-size: 4rem; }
@@ -51,10 +54,9 @@ i {
   h3 {
     font-size: 2.4rem; }
   h4 {
-    font-size: 2rem; } }
-
-i {
-  padding-bottom: 8px; }
+    font-size: 2rem; }
+  i {
+    padding-bottom: 8px; } }
 
 .back {
   background: url(../img/peakpx.jpg) top center fixed;
@@ -66,9 +68,10 @@ i {
   position: sticky;
   top: 0;
   margin-left: 0;
+  padding-right: 15px;
   box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6); }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 990px) {
   .hero {
     display: flex; } }
 
@@ -79,6 +82,9 @@ i {
 
 .dropdown-item {
   border-radius: 0.5rem; }
+  .dropdown-item:hover {
+    background-color: #f7450c;
+    color: white; }
 
 .arrow {
   position: fixed;
@@ -188,7 +194,7 @@ article:last-of-type {
   padding: 30px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
-  gap: 4rem; }
+  gap: 2rem; }
 
 @media screen and (min-width: 720px) {
   .containerTotal {
@@ -268,6 +274,8 @@ article:last-of-type {
 .container__card__link {
   text-decoration: none;
   text-align: center; }
+  .container__card__link h4 {
+    font-weight: bold; }
   .container__card__link h4:hover, .container__card__link img:hover {
     color: #f7450c; }
 
@@ -305,13 +313,15 @@ article:last-of-type {
       background: none;
       border-bottom: 1px solid #4a0404; }
     .contact__form form button {
-      background: #f7450c;
+      background: #4a0404;
       border: 0;
       border-radius: 5px;
       font-size: 1.6rem;
       font-weight: bold;
       color: white;
       text-transform: uppercase; }
+      .contact__form form button:hover {
+        background-color: #f7450c; }
 
 .point__contact {
   display: flex;
@@ -371,11 +381,15 @@ article:last-of-type {
   font-size: 16px; }
 
 .container__our__photoTherapy {
-  width: 280px;
+  width: 320px;
   margin: 30px;
   border-radius: 1rem;
   float: left;
   box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6); }
+
+@media screen and (min-width: 720px) {
+  .container__our__photoTherapy {
+    width: 400px; } }
 
 .container__our__textTherapy {
   padding: 30px;
