@@ -97,7 +97,7 @@ ul li {
 
 #current {
   fill: #f7450c;
-  transition: ease-in 0.2s all; }
+  transition: ease-in 0.5s all; }
   #current:hover {
     fill: #4a0404; }
 
@@ -120,7 +120,7 @@ li:hover ul {
   display: block; }
 
 .container__inicio {
-  height: auto;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
@@ -148,6 +148,10 @@ article:last-of-type {
   overflow: hidden;
   /* especifico posición de areas */
   grid-template-areas: "imagen" "texto"; }
+
+@media screen and (min-width: 720px) {
+  .card__inicio {
+    margin-top: 10%; } }
 
 .text__inicio h2 {
   display: inline-block;
@@ -348,9 +352,13 @@ article:last-of-type {
 
 .footer__container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: space-around;
   align-items: center; }
+
+.aldesign {
+  width: 120px;
+  filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%); }
 
 .icon {
   filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%); }
@@ -362,7 +370,7 @@ article:last-of-type {
   font-size: 2rem; }
 
 .card__container {
-  width: 230px;
+  width: 160px;
   font-size: 16px;
   padding-top: 10px; }
   .card__container p {
