@@ -180,13 +180,19 @@ li:hover ul {
 }
 
 .container__inicio {
-    height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 100px;
     background: url(../img/hero-bg.jpg) top center fixed;
     background-size: cover;
+}
+
+@media screen and (min-width: 720px) {
+    .container__inicio{
+        height: 100vh;
+    }
 }
 
 /* nombre de areas inicio */
@@ -581,12 +587,19 @@ article:last-of-type{
         padding-top: 6px;
     }
 
-    h2, h4 {
+    h2, h3, h4 {
         padding-bottom: 8px;
+        text-align: left;
     }
 
     h4 {
         padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .ontainer__our__textTherapy{
+        text-align: justify;
     }
 }
 
