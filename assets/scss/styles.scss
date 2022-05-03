@@ -224,14 +224,13 @@ article:last-of-type{
 
 @media screen and (min-width: 720px) {
     .card__inicio{
-       margin-top: 10% ;
+       margin-top: 2% ;
     }
 }
 
 .text__inicio h1{
     display: inline-block;
     margin: 0 0.5rem;
-    
     animation: fadeIn;
     animation-iteration-count: 1;
     animation-duration: 8s;
@@ -283,7 +282,7 @@ article:last-of-type{
     padding: 30px;
     background: $color-background; //Aplicando SASS
     border-radius: $rounded-edges; //Aplicando SASS
-    gap:2rem;
+    gap:2rem 0;
 }
 
 @media screen and (min-width: 720px) {
@@ -371,11 +370,8 @@ article:last-of-type{
     display: flex;
     width: 260px;
     height: 260px;
-    // background-color: rgb(241, 241, 241);
     margin-top: 2%;
     padding: 10px;
-    // border-radius: $rounded-edges; //Aplicando SASS
-    // box-shadow: $color-box-shadow; //Aplicando SASS
 
     p{
         font-size: 16px;
@@ -415,8 +411,7 @@ article:last-of-type{
     border: 2px;
     border-style: solid;
     color: $color-text; //Aplicando SASS
-    //filter: invert(7%) sepia(37%) saturate(6287%) hue-rotate(353deg) brightness(99%) contrast(103%);
-
+  
     &:hover{
         filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%);
     }
