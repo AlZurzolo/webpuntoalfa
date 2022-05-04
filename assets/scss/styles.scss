@@ -107,6 +107,7 @@ ul li{
 .hero {
     background-image: linear-gradient(to bottom, #f7450c, #fdd510);
     position: sticky;
+    z-index: 1000;
     top: 0;
     margin-left: 0;
     padding-right: 15px;
@@ -224,7 +225,7 @@ article:last-of-type{
 
 @media screen and (min-width: 720px) {
     .card__inicio{
-       margin-top: 2% ;
+        margin-top: 2%;
     }
 }
 
