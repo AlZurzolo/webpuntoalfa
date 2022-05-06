@@ -197,11 +197,11 @@ li:hover ul {
 }
 
 /* nombre de areas inicio */
-article:first-of-type{
+.text__inicio{
     grid-area: texto;
 }
 
-article:last-of-type{
+.img__inicio{
     grid-area: imagen;
 }
 
