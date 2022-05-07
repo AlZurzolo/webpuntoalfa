@@ -174,7 +174,8 @@ li:hover ul {
   gap: 2rem;
   overflow: hidden;
   /* especifico posición de areas */
-  grid-template-areas: "imagen" "texto"; }
+  grid-template-areas: "imagen"
+ "texto"; }
 
 @media screen and (min-width: 720px) {
   .card__inicio {
@@ -238,12 +239,18 @@ article:last-of-type {
   border-radius: 1rem;
   gap: 2rem 0;
   /* especifico posición de areas */
-  grid-template-areas: "titulo" "imagenOne" "textoOne" "imagenTwo" "textoTwo"; }
+  grid-template-areas: "titulo"
+ "imagenOne"
+ "textoOne"
+ "imagenTwo"
+ "textoTwo"; }
 
 @media screen and (min-width: 720px) {
   .containerOur {
     width: 80%;
-    grid-template-areas: "titulo titulo" "imagenOne textoOne" "textoTwo imagenTwo"; }
+    grid-template-areas: "titulo titulo"
+ "imagenOne textoOne"
+ "textoTwo imagenTwo"; }
   .titles {
     grid-column-start: 1;
     grid-column-end: 3;
