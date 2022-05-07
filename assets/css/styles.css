@@ -213,6 +213,22 @@ li:hover ul {
   background-size: cover;
   padding: 50px 0 50px 0; }
 
+/* nombre de areas inicio */
+header {
+  grid-area: titulo; }
+
+aside:first-of-type {
+  grid-area: imagenOne; }
+
+article:first-of-type {
+  grid-area: textoOne; }
+
+aside:last-of-type {
+  grid-area: imagenTwo; }
+
+article:last-of-type {
+  grid-area: textoTwo; }
+
 .containerOur {
   display: grid;
   width: 95%;
@@ -222,12 +238,12 @@ li:hover ul {
   border-radius: 1rem;
   gap: 2rem 0;
   /* especifico posición de areas */
-  grid-template-areas: "titulo" "aside" "article" "article" "aside"; }
+  grid-template-areas: "titulo" "imagenOne" "textoOne" "imagenTwo" "textoTwo"; }
 
 @media screen and (min-width: 720px) {
   .containerOur {
     width: 80%;
-    grid-template-areas: "titulo titulo" "aside article" "article aside"; }
+    grid-template-areas: "titulo titulo" "imagenOne textoOne" "textoTwo imagenTwo"; }
   .titles {
     grid-column-start: 1;
     grid-column-end: 3;
