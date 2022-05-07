@@ -213,6 +213,36 @@ li:hover ul {
   background-size: cover;
   padding: 50px 0 50px 0; }
 
+.containerOur {
+  display: grid;
+  width: 95%;
+  height: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  gap: 2rem 0;
+  /* especifico posición de areas */
+  grid-template-areas: "titulo" "aside" "article" "article" "aside"; }
+
+@media screen and (min-width: 720px) {
+  .containerOur {
+    width: 80%;
+    grid-template-areas: "titulo titulo" "aside article" "article aside"; }
+  .titles {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column; }
+  .image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex; }
+  .container__our__text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column; } }
+
 .containerTotal {
   width: 95%;
   height: auto;
