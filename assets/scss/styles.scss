@@ -296,6 +296,7 @@ article:last-of-type{
     width: 95%;
     height: auto;
     padding: 30px;
+    justify-content: center;
     background: $color-background; //Aplicando SASS
     border-radius: $rounded-edges; //Aplicando SASS
     gap:2rem 0;
@@ -309,13 +310,14 @@ article:last-of-type{
         "textoTwo";
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 930px) {
     .containerOur{
         width: 80%;
         grid-template-areas:
             "titulo titulo"
             "imagenOne textoOne"
             "textoTwo imagenTwo";
+        justify-content: center;
     }
     .titles {
         grid-column-start: 1;
@@ -352,7 +354,7 @@ article:last-of-type{
     gap:2rem 0;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 930px) {
     .containerTotal {
         width: 80%;
         grid-template-columns: auto auto;
@@ -570,7 +572,7 @@ article:last-of-type{
 }
 
 .aldesign{
-    width: 120px;
+    width: 100px;
     filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%);
 }
 
@@ -668,7 +670,6 @@ article:last-of-type{
 .container__retiro{
     width: 95%;
     height: auto;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -677,10 +678,10 @@ article:last-of-type{
     padding: 30px;
     background: $color-background; //Aplicando SASS
     border-radius: $rounded-edges; //Aplicando SASS
-    gap:3rem
+    gap:1rem
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1140px) {
     .container__retiro {
         width: 80%;
     }
@@ -724,7 +725,7 @@ tr:nth-child(even) {
 }
 
 .container__our__photoVirtual {
-    display: flex;
+    // display: flex;
     width: 100%;
     border-radius: $rounded-edges; //Aplicando SASS
     box-shadow: $color-box-shadow; //Aplicando SASS

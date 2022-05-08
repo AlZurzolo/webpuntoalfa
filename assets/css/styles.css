@@ -174,8 +174,7 @@ li:hover ul {
   gap: 2rem;
   overflow: hidden;
   /* especifico posición de areas */
-  grid-template-areas: "imagen"
- "texto"; }
+  grid-template-areas: "imagen" "texto"; }
 
 @media screen and (min-width: 720px) {
   .card__inicio {
@@ -235,22 +234,18 @@ article:last-of-type {
   width: 95%;
   height: auto;
   padding: 30px;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
   gap: 2rem 0;
   /* especifico posición de areas */
-  grid-template-areas: "titulo"
- "imagenOne"
- "textoOne"
- "imagenTwo"
- "textoTwo"; }
+  grid-template-areas: "titulo" "imagenOne" "textoOne" "imagenTwo" "textoTwo"; }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 930px) {
   .containerOur {
     width: 80%;
-    grid-template-areas: "titulo titulo"
- "imagenOne textoOne"
- "textoTwo imagenTwo"; }
+    grid-template-areas: "titulo titulo" "imagenOne textoOne" "textoTwo imagenTwo";
+    justify-content: center; }
   .titles {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -281,7 +276,7 @@ article:last-of-type {
   border-radius: 1rem;
   gap: 2rem 0; }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 930px) {
   .containerTotal {
     width: 80%;
     grid-template-columns: auto auto;
@@ -439,7 +434,7 @@ article:last-of-type {
   justify-content: space-evenly; }
 
 .aldesign {
-  width: 120px;
+  width: 100px;
   filter: invert(46%) sepia(81%) saturate(5050%) hue-rotate(353deg) brightness(100%) contrast(108%); }
 
 .icon {
@@ -503,7 +498,6 @@ article:last-of-type {
 .container__retiro {
   width: 95%;
   height: auto;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
@@ -512,9 +506,9 @@ article:last-of-type {
   padding: 30px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 1rem;
-  gap: 3rem; }
+  gap: 1rem; }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1140px) {
   .container__retiro {
     width: 80%; } }
 
@@ -549,7 +543,6 @@ tr:nth-child(even) {
   font-size: 20px; }
 
 .container__our__photoVirtual {
-  display: flex;
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0 0 20px 0 rgba(75, 4, 4, 0.6); }
