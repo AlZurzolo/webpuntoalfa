@@ -501,6 +501,8 @@ iframe {
   padding-top: 8px; }
   .card__container__redes ul {
     padding: 0; }
+  .card__container__redes li {
+    float: left; }
 
 .container__contact {
   width: 40%;
