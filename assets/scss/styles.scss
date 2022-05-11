@@ -383,6 +383,11 @@ article:last-of-type{
     width: 220px;
     border-radius: $rounded-edges; //Aplicando SASS
     box-shadow: $color-box-shadow; //Aplicando SASS
+    transition: 1s;
+
+    &:hover{
+        filter: grayscale(80%);
+    }
 }
 
 @media screen and (min-width: 720px) {
@@ -429,6 +434,7 @@ article:last-of-type{
     background-color: rgb(241, 241, 241);
     border-radius: $rounded-edges; //Aplicando SASS
     box-shadow: $color-box-shadow; //Aplicando SASS
+    transition: transform 1s;
 
     &:hover {
         transform: scale(1.1);
@@ -437,19 +443,13 @@ article:last-of-type{
 
 .container__card {
     display: flex;
-    width: 260px;
+    width: 320px;
     height: 260px;
     margin-top: 2%;
     padding: 10px;
 
     p{
         font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .container__card {
-        width: 260px;
     }
 }
 
@@ -496,7 +496,29 @@ article:last-of-type{
     width:100%;
 }
 
+.containerContact {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding: 30px;
+    background: $color-background; //Aplicando SASS
+    border-radius: $rounded-edges; //Aplicando SASS
+    gap:2rem;
+}
+
+@media screen and (min-width: 730px) {
+    .containerContact {
+        width: 80%;
+    }
+}
+
 .contact__form{
+    width: 100%;
     box-shadow: $color-box-shadow; //Aplicando SASS
     border-radius: $rounded-edges; //Aplicando SASS
 
@@ -536,8 +558,21 @@ article:last-of-type{
     }
 }
 
+@media screen and (min-width: 730px) {
+    .contact__form {
+        width: 80%;
+    }
+}
+
+textarea:focus, input:focus, input[type]:focus {
+    border-color: rgb(255, 144, 0);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
+    outline: 0 none;
+}
+
 .point__contact{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 
@@ -551,14 +586,34 @@ article:last-of-type{
     }
 }
 
+iframe{
+    box-shadow: $color-box-shadow;
+    width: 300px;
+    height: 300px;
+    border-radius: $rounded-edges;
+}
+
+@media screen and (min-width: 915px) {
+    iframe {
+        width: 500px;
+        height: 500px;
+    }
+}
+
 .contact__info{
     display: grid;
     width: 100%;
     grid-template-rows: 1fr 1fr auto;
     padding: 30px 10px 30px 10px;
-    gap: 6rem;
+    gap: 2rem;
     box-shadow: $color-box-shadow; //Aplicando SASS
     border-radius: $rounded-edges; //Aplicando SASS
+}
+
+@media screen and (min-width: 730px) {
+    .contact__info {
+        width: 80%;
+    }
 }
 
 #footer {
@@ -568,7 +623,7 @@ article:last-of-type{
 
 .footer__container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
 }
 
 .aldesign{
@@ -598,6 +653,7 @@ article:last-of-type{
     width: 160px;
     font-size: 16px;
     padding-top: 10px;
+
 
     p{
         @if ($color-footer-background == $color-text){ //Aplicando SASSII
@@ -634,6 +690,11 @@ article:last-of-type{
     margin: 30px;
     border-radius: $rounded-edges; //Aplicando SASS
     box-shadow: $color-box-shadow; //Aplicando SASS
+    
+    &:hover{
+        transition: 1s;
+        filter: grayscale(80%);
+    }
 }
 
 @media screen and (min-width: 720px) {
