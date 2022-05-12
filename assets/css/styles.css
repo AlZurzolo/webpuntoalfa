@@ -356,9 +356,9 @@ article:last-of-type {
 .container__card__link {
   text-decoration: none;
   text-align: center; }
-  .container__card__link h4 {
+  .container__card__link h3 {
     font-weight: bold; }
-  .container__card__link h4:hover, .container__card__link img:hover {
+  .container__card__link h3:hover, .container__card__link img:hover {
     color: #f7450c; }
 
 .container__card__image {

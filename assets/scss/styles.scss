@@ -463,11 +463,11 @@ article:last-of-type{
     text-decoration: none;
     text-align: center;
 
-    h4{
+    h3{
         font-weight: bold;
     }
 
-    h4:hover, img:hover{
+    h3:hover, img:hover{
         color: $color-link; //Aplicando SASS
     }
 }
@@ -790,7 +790,6 @@ tr:nth-child(even) {
 }
 
 .container__our__photoVirtual {
-    // display: flex;
     width: 100%;
     border-radius: $rounded-edges; //Aplicando SASS
     box-shadow: $color-box-shadow; //Aplicando SASS
