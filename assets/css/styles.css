@@ -603,3 +603,23 @@ tr:nth-child(even) {
 .container__our__textTherapyTwo {
   font-size: 18px;
   text-align: center; }
+
+.error {
+  background: url(./../img/grieta.png) top center fixed;
+  background-size: cover;
+  padding: 0; }
+  .error__view {
+    height: 100vh; }
+  .error__card {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    padding: 130px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    gap: 2rem;
+    overflow: hidden;
+    /* especifico posición de areas */ }
+  @media screen and (min-width: 720px) {
+    .errorerror__card {
+      margin-top: 2%; } }
