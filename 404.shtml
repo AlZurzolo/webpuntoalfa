@@ -83,9 +83,9 @@
     <!-- cuerpo -->
     <!--inicio -->
     <main>
-        <section class="container__inicio">
-            <div class="card__inicio">
-                <div class="text__inicio">
+        <section class="start">
+            <div class="start__card">
+                <div class="start__text">
                     <h1>Esta página no existe.</h1>
                     <p class="letraParrafoChica">No hemos podido localizar la página que buscas.</p>
                 </div>
@@ -99,12 +99,12 @@
             <div>
                 <img class="aldesign" src="http://www.webpuntoalfa.zurzolo.com/assets/img/AlDesign.svg" alt="Diseño de AlDesign, derechos reservados.">
             </div>
-            <div class="card__container">
+            <div class="cardContainer">
             <div>
                 <p><strong>Punto ALFA 2022 ®</strong></p>
             </div>
         </div>
-        <div class="card__container__redes">
+        <div class="cardContainer__redes">
             <ul>
                 <li>
                     <a href="https://facebook.com/programapuntoalfa" target="_blank"><img class="icon" src="http://www.webpuntoalfa.zurzolo.com/assets/img/facebook.svg"
