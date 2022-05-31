@@ -300,10 +300,14 @@ article:last-of-type{
     /* especifico posición de areas */
     grid-template-areas:
         "titulo"
+        "nombreF" // Agregado
         "imagenOne"
         "textoOne"
+        "textoOneB" // Agregado
+        "nombreA" // Agregado
         "imagenTwo"
-        "textoTwo";
+        "textoTwo"
+        "textoTwoB"; // Agregado
 }
 
 @media screen and (min-width: 930px) {
@@ -311,8 +315,12 @@ article:last-of-type{
         width: 80%;
         grid-template-areas:
             "titulo titulo"
+            "nombreF nombreF" // agregado
             "imagenOne textoOne"
-            "textoTwo imagenTwo";
+            "textoOneB textoOneB" // agregado
+            "nombreA nombreA" // agregado
+            "textoTwo imagenTwo"
+            "TextoTwoB TextoTwoB"; // agregado
         justify-content: center;
 
         &__text{
@@ -321,9 +329,20 @@ article:last-of-type{
             display: flex;
             flex-direction: column;
         }
-
     }
     .titles {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .nombreF{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .nombreA{
         grid-column-start: 1;
         grid-column-end: 3;
         display: flex;
@@ -333,6 +352,18 @@ article:last-of-type{
         grid-column-start: 1;
         grid-column-end: 2;
         display: flex;
+    }
+    .textoOneB{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .textoTwoB{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -789,13 +820,19 @@ tr:nth-child(even) {
     display: block;
     width: 80%;
     filter: invert(9%) sepia(59%) saturate(3648%) hue-rotate(10deg) brightness(95%) contrast(117%);
+
+    @media screen and (min-width: 1140px) {
+        & {
+            width: 40%;
+        }
+    }
 }
 
 .principal{
     color: $color-link;
     font-size: 25px;
     font-style: italic;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 600 ;
     text-align: justify;
 }
@@ -811,3 +848,59 @@ tr:nth-child(even) {
 .resaltador{
     background-color: rgba(247, 69, 12, 0.2)
 }
+
+// efecto imagenes cursos
+
+.ula {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.lia {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    margin: 0 15px 15px 0;
+    border-radius: $rounded-edges;
+    box-shadow: $color-box-shadow;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(65, 0, 0, 0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+    width: 340px;
+    // border-radius:$rounded-edges;
+    color: #FFF;
+    padding: 10px;
+
+    h3{
+        color:#FFF;
+        text-align: center;
+    }
+
+    h4{
+        color: #FFF;
+        text-align: center;
+    }
+
+    h5{
+        text-align: center;
+    }
+}
+
+.lia:hover .info {
+    display: block;
+}
+
+.imgCurso{
+    width: 340px;
+    justify-items: center;
+}
+ //
