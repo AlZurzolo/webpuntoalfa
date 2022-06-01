@@ -873,12 +873,14 @@ tr:nth-child(even) {
     position: absolute;
     bottom: 0;
     z-index: 10;
-    background: rgba(65, 0, 0, 0.8);
+    background: $color-placa;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
     width: 340px;
-    // border-radius:$rounded-edges;
-    color: #FFF;
+    color: #ffff;
     padding: 10px;
+    animation: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1s;;
 
     h3{
         color:#FFF;
