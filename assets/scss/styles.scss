@@ -593,6 +593,38 @@ article:last-of-type{
     }
 }
 
+#contacto .contact__form #sendmessage {
+    color: #03C4EB;
+    border: 1px solid #03C4EB;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  #contacto .contact__form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  #contacto .contact__form #sendmessage.show, #contacto .contact__form #errormessage.show, #contacto .contact__form .show {
+    display: block;
+  }
+  
+  #contacto .contact__form .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
 textarea:focus, input:focus, input[type]:focus {
     border-color: rgb(255, 144, 0);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6);
@@ -905,4 +937,3 @@ tr:nth-child(even) {
     width: 340px;
     justify-items: center;
 }
- //

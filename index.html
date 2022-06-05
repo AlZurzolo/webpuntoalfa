@@ -20,12 +20,12 @@
     <meta name="description"
         content="Herramientas para alcanzar el equilibrio emocional, mental y físico que estás buscando. Punto ALFA">
     <!-- Open Graph -->
-    <meta property="og:url" content="http://www.webpuntoalfa.zurzolo.com/">
+    <meta property="og:url" content="http://www.puntoalfa.ar/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Punto ALFA | Un camino holístico para la sanación del Alma">
     <meta property="og:description"
         content="Herramientas para alcanzar el equilibrio emocional, mental y físico que estás buscando. Punto ALFA">
-    <meta property="og:image" content="http://www.webpuntoalfa.zurzolo.com/assets/img/logo_puntoalfa-redes.jpg">
+    <meta property="og:image" content="http://www.puntoalfa.ar/assets/img/logo_puntoalfa-redes.jpg">
 
     <title>Punto ALFA | Camino holístico - Cursos - Seminatios - Talleres</title>
 </head>
@@ -230,42 +230,58 @@
                 <div class="contactInfo">
                     <div class="contactInfo__point">
                         <img src="./assets/img/email.svg" alt="E-mail">
-                        <a class="card__link" href="mailto:alfaorganizaciones@gmail.com">
+                        <a class="card__link" href="mailto:info@puntoalfa.ar">
                             alfaorganizaciones@gmail.com</a>
                     </div>
 
                     <div class="contactInfo__point">
                         <img src="./assets/img/bxs-phone.svg" alt="Whatsapp Aldo">
                         <a class="card__link">
-                            +54 9 11 5472-8466 |</a>
+                            +54 9 11 5472-8466 - Aldo</a>
+                    </div>
+
+                    <div class="contactInfo__point">
                         <img src="./assets/img/bxs-phone.svg" alt="Whatsapp Fafa">
                         <a class="card__link">
-                            +54 9 11 6335-0306</a>
+                            +54 9 11 6335-0306 - Fafa</a>
                     </div>
                 </div>
                 <br>
                 <div class="contact__form">
-                    <form action="" method="post">
-                        <div>
+                    <div id="sendmessage">Su mensaje ha sido enviado. Muchas gracias.</div>
+                    <div id="errormessage"></div>
+
+                    <form action="./assets/contactform/contactform.php" method="post" role="form" autocomplete="off">
+                        <div class="form-group">
                             <p>
                                 <label for="nombre">Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required
+                                    data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres">
                             </p>
+                            <div class="validation"></div>
                             <p>
                                 <label for="mail">Email</label>
-                                <input type="mail" id="mail" name="mail" placeholder="Escribe tu e-mail" required>
+                                <input type="mail" id="mail" name="mail" placeholder="Escribe tu e-mail" required
+                                    data-rule="email" data-msg="Ingresa un e-mail válido">
                             </p>
+                            <div class="validation"></div>
                             <p>
                                 <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono"
+                                    data-rule="minlen:8" data-msg="Por favor ingrese un número válido">
                             </p>
+                            <div class="validation"></div>
                             <p>
                                 <label for="asunto">Asunto</label>
-                                <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto">
+                                <input type="text" id="asunto" name="asunto" placeholder="Escribe el asunto"
+                                    data-rule="minlen:8"
+                                    data-msg="Por favor al menos ingrese 8 caracteres en el asunto">
                             </p>
+                            <div class="validation"></div>
                             <p>
                                 <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe el mensaje"
+                                <textarea id="mensaje" name="mensaje" rows="4"
+                                    data-msg="Por favor escribe algo para nosotros" placeholder="Escribe el mensaje"
                                     required></textarea>
                             </p>
                             <p>
@@ -311,7 +327,8 @@
     <!-- fin pie -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./assets/contactform/contactform.js"></script>
+    <script src="./assets/libjquery/jquery.min.js"></script>
 </body>
 
 </html>
