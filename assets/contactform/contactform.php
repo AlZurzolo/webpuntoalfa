@@ -24,6 +24,6 @@ $asunto = 'Mensaje web Punto ALFA';
 
 if(mail($para,$asunto,utf8_decode($message),$header))
 echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente');</script>";
-echo "<script type='text/javascript'>window.location.href='http://www.webpuntoalfa.zurzolo.com';</script>";
+echo "<script type='text/javascript'>window.location.href='http://www.puntoalfa.ar';</script>";
 
  ?>
