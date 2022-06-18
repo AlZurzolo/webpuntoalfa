@@ -105,8 +105,9 @@
     <!-- pie -->
     <footer id="footer" class="footer__container">
         <div>
-            <img class="aldesign" src="http://www.puntoalfa.ar/assets/img/AlDesign.svg"
-                alt="Diseño de AlDesign, derechos reservados.">
+            <a href="https://linkedin.com/in/aldo-enrique-zurzolo" target="_blank"><img class="aldesign"
+                    src="http://www.puntoalfa.ar/assets/img/AlDesign.svg"
+                    alt="Diseño de AlDesign, derechos reservados."></a>
         </div>
         <div class="cardContainer">
             <div>
